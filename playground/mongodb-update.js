@@ -19,21 +19,21 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',(err, db) => {
   //   console.log(result);
   // })
 
-  //Todos set name to mike and increment age by one
-  db.collection('Users').findOneAndUpdate({
-    _id: new ObjectID("5932040125941ee59df8af59")
-  },{
-    $set:{
-      name:"Mike"
-    },
-    $inc:{
-      age:2
-    }
-  },{
-    returnOriginal: false
-  }).then((result)=>{
-    console.log(result);
-  })
+  //Users set name to mike and increment age by one
+  // db.collection('Users').findOneAndUpdate({
+  //   _id: new ObjectID("5932040125941ee59df8af59")
+  // },{
+  //   $set:{
+  //     name:"Mike"
+  //   },
+  //   $inc:{
+  //     age:2
+  //   }
+  // },{
+  //   returnOriginal: false
+  // }).then((result)=>{
+  //   console.log(result);
+  // })
 
 
   //db.close();
